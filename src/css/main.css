@@ -1,8 +1,87 @@
 .about {
     background-color: #333;
-    
+
     display: flex;
     flex-direction: row-reverse;
 
     padding: 120px 0;
+}
+
+.text-history {
+    max-width: 300px;
+    /* margin-right: -100px; */
+}
+
+.text-history h2 {
+    font-size: 3.125em;
+}
+
+section .image-about img {
+    width: 100%;
+}
+
+/* Section services  */
+
+.services {
+    background-color: #222222;
+    padding: 50px 0 50px 0;
+}
+
+.title-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    font-family: var(--font-title);
+}
+
+.title-services > h2 {
+    font-size: 3.125em;
+    margin: 0 0 20px 0;
+}
+
+.title-services > p {
+    color: #757272;
+    font-family: var(--font-text);
+
+    font-size: 1.25em;
+
+    margin: 0 0 57px 0;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+
+    color: #fff;
+
+    font-family: var(--font-text);
+    font-size: 1.25em;
+}
+
+.beard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+.beard-and-hair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+.hair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 50px 0;
 }
