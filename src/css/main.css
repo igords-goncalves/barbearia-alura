@@ -39,7 +39,9 @@ section .image-about img {
 
 .title-services > h2 {
     font-size: 3.125em;
-    margin: 0 0 20px 0;
+    font-weight: normal;
+
+    margin: 50px 0 20px 0;
 }
 
 .title-services > p {
@@ -47,8 +49,9 @@ section .image-about img {
     font-family: var(--font-text);
 
     font-size: 1.25em;
+    font-weight: bold;
 
-    margin: 0 0 57px 0;
+    margin: 0 0 37px 0;
 }
 
 .cards {
@@ -67,10 +70,11 @@ section .image-about img {
 .beard {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 50px 0 50px 0;
 }
+
 .beard-and-hair {
     display: flex;
     flex-direction: column;
@@ -78,10 +82,35 @@ section .image-about img {
     justify-content: center;
     padding: 50px 0 50px 0;
 }
+
 .hair {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 50px 0 50px 0;
+}
+
+.beard p {
+    padding: 20px 50px 20px 0;
+}
+
+.beard-and-hair p {
+    padding: 20px 50px 20px 50px;
+}
+
+.hair p {
+    padding: 20px 0 20px 50px;
+}
+
+.beard img {
+    padding: 20px 50px 20px 0;
+}
+
+.beard-and-hair img {
+    padding: 20px 50px 20px 50px;
+}
+
+.hair img {
+    padding: 20px 0 20px 50px;
 }
