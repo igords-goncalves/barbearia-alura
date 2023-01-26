@@ -1,5 +1,5 @@
 header {
-    background: url('../assets/img/banner-header.svg');
+    background: url("../assets/img/banner-header.svg");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -29,15 +29,21 @@ header {
     margin: 10px 0 36px 0;
 }
 
-
-.nav nav a {
+.nav nav ul li a {
     padding: 0 0 0 78px;
     text-decoration: none;
     font-family: var(--font-text);
     font-weight: normal;
     font-size: 1.5em;
 
-    color: #fff
+    text-decoration: none;
+
+    color: #fff;
+}
+
+ul {
+    display: flex;
+    list-style: none;
 }
 
 .title-header {
@@ -63,7 +69,6 @@ header {
     text-align: center;
 }
 
-
 .button {
     padding: 25px 120px;
     font-size: 1.1em;
@@ -75,5 +80,5 @@ header {
     border-radius: 3px;
     outline: none;
 
-    background-color: #C56E07;
+    background-color: #c56e07;
 }
