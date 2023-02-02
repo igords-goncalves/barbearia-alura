@@ -108,3 +108,23 @@ ul {
         padding: 30px;
     }
 }
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        max-width: 284px;
+    }
+
+    .title-header h1 {
+        text-align: center;
+    }
+
+    .button-header .button{
+        padding: 10px;
+    }
+
+    .description {
+        width: 100%;
+        text-align: center;
+    }
+}
