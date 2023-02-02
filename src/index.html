@@ -5,7 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="global.style.css" />
+
+        <script src="https://unpkg.com/scrollreveal"></script>
 
         <title>Barbearia Alura</title>
     </head>
@@ -22,10 +24,20 @@
                     </div>
                     <div class="nav">
                         <nav>
-                            <a href="#">Início</a>
-                            <a href="#about">Sobre</a>
-                            <a href="#services">Serviços</a>
-                            <a href="#contact">Contato</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Início</a>
+                                </li>
+                                <li>
+                                    <a href="#about">Sobre</a>
+                                </li>
+                                <li>
+                                    <a href="#services">Serviços</a>
+                                </li>
+                                <li>
+                                    <a href="#contact">Contato</a>
+                                </li>
+                            </ul>
                         </nav>
                     </div>
                 </div>
@@ -38,7 +50,12 @@
                         </p>
                     </div>
                     <div class="button-header">
-                        <button class="button">Saiba Mais</button>
+                        <a
+                            href="https://www.alura.com.br/"
+                            target="_blank"
+                            class="button"
+                            >Saiba Mais</a
+                        >
                     </div>
                 </div>
             </div>
@@ -46,16 +63,13 @@
 
         <main>
             <section class="about" id="about">
-                <div class="image-about">
-                    <img
-                        src="./assets/img/image-about.svg"
-                        alt="Homem fazendo a barba na barbearia sentando na cadeira"
-                    />
-                </div>
-                <div class="container-about">
+                <div class="container">
                     <div class="text-history">
-                        <h2>Sobre a Barbearia Alura</h2>
-
+                        <h2>Sobre a Barbearia</h2>
+                        <p class="mission">
+                            Nossa missão é "proporcionar auto-estima e qualidade
+                            de vida aos clientes"
+                        </p>
                         <p class="history">
                             Localizada no coração da cidade a Barbearia Alura
                             traz para o mercado o que há de melhor para o seu
@@ -63,12 +77,6 @@
                             já é destaque na cidade e conquista novos clientes a
                             cada dia.
                         </p>
-
-                        <p class="mission">
-                            Nossa missão é "proporcionar auto-estima e qualidade
-                            de vida aos clientes"
-                        </p>
-
                         <p class="team">
                             Oferecemos profissionais experientes e antenados às
                             mudanças no mundo da moda. O atendimento possui
@@ -112,44 +120,83 @@
                     </div>
                 </div>
             </section>
+
             <section class="contact" id="contact">
-                <div class="container">
+                <div class="container form-contact">
                     <div class="title-contact">
-                        <h2>Marque um horário</h2>
-                        <p>
-                            Oferecemos profissionais experientes e antenados às
-                            mudanças no mundo da moda
-                        </p>
+                        <div>
+                            <h2>Marque um horário.</h2>
+                            <p>
+                                Oferecemos profissionais experientes e antenados às
+                                mudanças no mundo da moda.
+                            </p>
+                        </div>
+
+                        <table>
+                            <tr>
+                                <td>Segunda-Feira</td>
+                                <td>8h ás 20hs</td>
+                            </tr>
+                            <tr>
+                                <td>Quarta-Feira</td>
+                                <td>8h ás 20hs</td>
+                            </tr>
+                            <tr>
+                                <td>Sexta-Feira</td>
+                                <td>8h ás 20hs</td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="form">
+                        <div class="title-form">
+                            <h3>Contatos</h3>
+                            <p>
+                                Oferecemos profissionais experientes e antenados
+                                às mudanças no mundo da moda.
+                            </p>
+                        </div>
                         <form action="" method="get">
-                            <div>
-                                <input type="text" />
+                            <div class="name-email">
+                                <input type="text" placeholder="Seu nome"/>
+                                <input type="email" name="" id="" placeholder="Seu email"/>
                             </div>
                             <div>
-                                <input type="email" name="" id="" />
+                                <div class="tel-textarea">
+                                    <input type="tel" name="" id="" placeholder="Seu telefone"/>
+                                    <textarea
+                                        name=""
+                                        id=""
+                                        cols="10"
+                                        rows="1"
+                                        placeholder="Sua mensagem"
+                                    ></textarea>
+                                </div>
+                                <div class="date">
+                                    <select name="datetime">
+                                        <option value="Horário">Horário</option>
+                                        <option value="9hs">9hs</option>
+                                        <option value="12hs">12hs</option>
+                                        <option value="15hs">15hs</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div>
-                                <input type="tel" name="" id="" />
+                            <div class="radio">
+                                <p>Como prefere contato?</p>
+                                <div class="radio-input">
+                                    <input type="radio" name="contac" id="" />
+                                    <label for="">telefone</label>
+                                </div>
+                                <div class="radio-input">
+                                    <input type="radio" name="contac" id="" />
+                                    <label for="">Whatsapp</label>
+                                </div>
+                                <div class="input-radio">
+                                    <input type="radio" name="contac" id="" />
+                                    <label for="">E-mail</label>
+                                </div>
                             </div>
-                            <div class="radio"></div>
-                            <div>
-                                <input type="radio" name="" id="" />
-                                <label for="">telefone</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="" id="" />
-                                <label for="">Whatsapp</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="" id="" />
-                                <label for="">E-mail</label>
-                            </div>
-                            <div>
-                                <input type="datetime" />
-                            </div>
-                            <div>
-                                <button class="button form" type="submit">
+                            <div class="button-form-wrapper">
+                                <button class="button button-form" type="submit">
                                     Enviar
                                 </button>
                             </div>
@@ -166,5 +213,6 @@
                 </p>
             </div>
         </footer>
+        <script src="./js/scrollReveal.js"></script>
     </body>
 </html>
