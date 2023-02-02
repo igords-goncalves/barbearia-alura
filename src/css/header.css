@@ -54,11 +54,11 @@ ul {
     padding: 0 0 34px 0;
 
     font-family: var(--font-title);
-    font-weight: bold;
+    font-weight: normal;
     font-size: 4em;
 }
 
-.title-header .description {
+.description {
     padding: 0 0 87px 0;
 
     font-family: var(--font-text);
@@ -75,6 +75,7 @@ ul {
     font-family: var(--font-text);
 
     color: #fff;
+    text-decoration: none;
 
     border: none;
     border-radius: 3px;
