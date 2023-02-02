@@ -12,20 +12,17 @@
     padding: 0 45% 0 0;
 }
 
-.text-history > h2 {
-    color: #fff;
-}
-
 .text-history h2 {
+    color: #fff;
     font-size: 3.125em;
     font-family: var(--font-title);
-    font-weight: normal;
 }
 
 .mission, .history, .team {
     margin: 22px 0 28px 0;
     color: #757272;
     font-family: var(--font-text);
+    font-weight: bold;
 
     font-size: 1.25em;
 
@@ -50,7 +47,6 @@
 
 .title-services > h2 {
     font-size: 3.125em;
-    font-weight: normal;
 
     margin: 50px 0 20px 0;
 }
@@ -72,10 +68,11 @@
 
     text-align: center;
 
-    color: #fff;
+    color: #757272;
 
     font-family: var(--font-text);
     font-size: 1.25em;
+    font-weight: bold;
 }
 
 .beard {
@@ -124,6 +121,191 @@
 
 .hair img {
     padding: 20px 0 20px 50px;
+}
+
+/* section contact  */
+
+.form-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact {
+    background-image: url('../assets/img/background-contact.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 200px 0;
+}
+
+.title-contact div {
+    max-width: 488px;
+}
+
+.title-contact h2 {
+    color: #fff;
+    font-family: var(--font-title);
+    font-size: 3.125em;
+
+    margin: 0 0 16px 0;
+}
+
+.title-contact p {
+    color: #757272;
+
+    font-family: var(--font-text);
+    font-size: 1.25em;
+    font-weight: bold;
+
+    margin: 0 0 57px 0;
+}
+
+.title-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.title-contact h2 {
+    font-family: var(--font-title);
+    font-size: 3.125em;
+}
+
+table, th, td {
+    border: 1px solid #757272;
+    width: 420px;
+    text-align: center;
+    padding: 10px;
+
+    font-family: var(--font-text);
+    font-size: 1.3em;
+    font-weight: bold;
+
+    color: #757272;
+}
+
+.form {
+    background-color: #fff;
+    color: #000;
+
+    max-width: 554px;
+    padding: 47px 66px;
+}
+
+.title-form h3 {
+    font-family: var(--font-title);
+    font-size: 3.125em;
+    color: #000;
+    font-weight: lighter;
+
+    margin: 0 0 8px 0;
+}
+
+.title-form p {
+    color: #757272;
+
+    font-family: var(--font-text);
+    font-size: 1.25em;
+    font-weight: bold;
+
+    margin: 0 0 45px 0;
+}
+
+input {
+    border: 1px solid #8a8a8a;
+    padding: 14px;
+
+    font-family: var(--font-text);
+    color: #252525;
+    font-weight: normal;
+}
+
+textarea {
+    border: 1px solid #8a8a8a;
+}
+
+.name-email {
+    display: flex;
+    margin-bottom: 27px;
+}
+
+.tel-textarea {
+    display: flex;
+    align-items: flex-start;
+}
+
+textarea {
+    width: 100%;
+    padding: 14px;
+    resize: vertical;
+    min-height: 46.16px;
+}
+
+input[type=text] {
+    margin-right: 32px;
+}
+
+input[type=tel] {
+    margin-right: 32px;
+}
+
+input[type=email] {
+    width: 100%;
+}
+
+.radio {
+    font-family: var(--font-text);
+    color: #252525;
+    font-weight: normal;
+}
+
+.radio p {
+    margin: 0 0 12px 0;
+}
+
+div.radio-input {
+    margin: 0 0 6px 0;
+}
+
+
+.buttom-form {
+    height: 60px;
+    width: 293px;
+}
+
+.button-form-wrapper {
+    margin: 48px 0 0 0;
+}
+
+select[name=datetime] {
+
+    border: 1px solid #8a8a8a;
+    padding: 14px;
+
+    font-family: var(--font-text);
+    color: #8a8a8a;
+    font-weight: normal;
+
+    float: right;
+    width: 100%;
+    margin: 27px 0;
+}
+
+/* footer */
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 128px 0 87px 0;
+    font-family: var(--font-text);
+    font-weight: lighter;
+}
+
+footer img {
+    margin-bottom: 47px;
 }
 
 @media (max-width: 1280px) {
