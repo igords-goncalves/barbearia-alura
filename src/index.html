@@ -120,14 +120,17 @@
                     </div>
                 </div>
             </section>
+
             <section class="contact" id="contact">
-                <div class="container">
+                <div class="container form-contact">
                     <div class="title-contact">
-                        <h2>Marque um horário</h2>
-                        <p>
-                            Oferecemos profissionais experientes e antenados às
-                            mudanças no mundo da moda
-                        </p>
+                        <div>
+                            <h2>Marque um horário.</h2>
+                            <p>
+                                Oferecemos profissionais experientes e antenados às
+                                mudanças no mundo da moda.
+                            </p>
+                        </div>
 
                         <table>
                             <tr>
@@ -145,34 +148,55 @@
                         </table>
                     </div>
                     <div class="form">
+                        <div class="title-form">
+                            <h3>Contatos</h3>
+                            <p>
+                                Oferecemos profissionais experientes e antenados
+                                às mudanças no mundo da moda.
+                            </p>
+                        </div>
                         <form action="" method="get">
-                            <div>
-                                <input type="text" />
+                            <div class="name-email">
+                                <input type="text" placeholder="Seu nome"/>
+                                <input type="email" name="" id="" placeholder="Seu email"/>
                             </div>
                             <div>
-                                <input type="email" name="" id="" />
+                                <div class="tel-textarea">
+                                    <input type="tel" name="" id="" placeholder="Seu telefone"/>
+                                    <textarea
+                                        name=""
+                                        id=""
+                                        cols="10"
+                                        rows="1"
+                                        placeholder="Sua mensagem"
+                                    ></textarea>
+                                </div>
+                                <div class="date">
+                                    <select name="datetime">
+                                        <option value="Horário">Horário</option>
+                                        <option value="9hs">9hs</option>
+                                        <option value="12hs">12hs</option>
+                                        <option value="15hs">15hs</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div>
-                                <input type="tel" name="" id="" />
+                            <div class="radio">
+                                <p>Como prefere contato?</p>
+                                <div class="radio-input">
+                                    <input type="radio" name="contac" id="" />
+                                    <label for="">telefone</label>
+                                </div>
+                                <div class="radio-input">
+                                    <input type="radio" name="contac" id="" />
+                                    <label for="">Whatsapp</label>
+                                </div>
+                                <div class="input-radio">
+                                    <input type="radio" name="contac" id="" />
+                                    <label for="">E-mail</label>
+                                </div>
                             </div>
-                            <div class="radio"></div>
-                            <div>
-                                <input type="radio" name="contac" id="" />
-                                <label for="">telefone</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="contac" id="" />
-                                <label for="">Whatsapp</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="contac" id="" />
-                                <label for="">E-mail</label>
-                            </div>
-                            <div>
-                                <input type="datetime" />
-                            </div>
-                            <div>
-                                <button class="button form" type="submit">
+                            <div class="button-form-wrapper">
+                                <button class="button button-form" type="submit">
                                     Enviar
                                 </button>
                             </div>
