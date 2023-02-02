@@ -7,7 +7,7 @@ const header = {
 }
 
 const sectionAbout = {
-    hitstory: '.textHistory'
+    hitstory: '.text-history'
 }
 
 const sectionServices = {
@@ -24,11 +24,9 @@ function applyReveal(target, time) {
     ScrollReveal().reveal(target, {delay: time});
 }
 
-applyReveal(header.title, 100)
-applyReveal(header.description, 100)
-applyReveal(header.button, 100)
-
 applyReveal(sectionAbout.hitstory, 200)
 
 applyReveal(sectionServices.title, 250)
 applyReveal(sectionServices.cards, 280)
+
+applyReveal(sectionContact.title, 280)
