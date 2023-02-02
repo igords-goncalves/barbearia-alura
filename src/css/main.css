@@ -32,7 +32,7 @@
 
 .services {
     background-color: #222222;
-    padding: 50px 0 50px 0;
+    padding: 50px 0 120px 0;
 }
 
 .title-services {
@@ -43,6 +43,8 @@
 
     color: #fff;
     font-family: var(--font-title);
+
+    margin-bottom: 60px;
 }
 
 .title-services > h2 {
@@ -75,52 +77,18 @@
     font-weight: bold;
 }
 
-.beard {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 50px 0 50px 0;
-}
-
-.beard-and-hair {
+.hair, .beard-and-hair, .beard  {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 0 50px 0;
+
+    max-width: 260px;
 }
 
-.hair {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0 50px 0;
-}
-
-.beard p {
-    padding: 20px 50px 20px 0;
-}
-
-.beard-and-hair p {
-    padding: 20px 50px 20px 50px;
-}
-
-.hair p {
-    padding: 20px 0 20px 50px;
-}
-
-.beard img {
-    padding: 20px 50px 20px 0;
-}
-
-.beard-and-hair img {
-    padding: 20px 50px 20px 50px;
-}
-
-.hair img {
-    padding: 20px 0 20px 50px;
+.hair img, .beard-and-hair img, .beard img {
+    width: 80%;
+    text-align: center;
 }
 
 /* section contact  */
@@ -309,8 +277,14 @@ footer img {
 }
 
 @media (max-width: 1280px) {
+
+    .container {
+        max-width: 557px;
+    }
+    
     .about {
         background-image: none;
+        padding: 30px 0 100px 0;
     }
 
     .text-history > h2 {
@@ -319,6 +293,34 @@ footer img {
 
     .text-history {
         text-align: justify;
-        padding: 0 100px;
+        padding: 0 0;
+    }
+
+    .services {
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hair, .beard-and-hair, .beard  {
+        margin-bottom: 50px;
+    }
+
+    .form-contact {
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .title-contact {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
     }
 }
