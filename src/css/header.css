@@ -54,7 +54,6 @@ ul {
     padding: 0 0 34px 0;
 
     font-family: var(--font-title);
-    font-weight: normal;
     font-size: 4em;
 }
 
@@ -62,8 +61,10 @@ ul {
     padding: 0 0 87px 0;
 
     font-family: var(--font-text);
-    font-weight: normal;
+    font-weight: bold;
     font-size: 1.2em;
+
+    color: #757272;
 
     width: 550px;
     text-align: center;
