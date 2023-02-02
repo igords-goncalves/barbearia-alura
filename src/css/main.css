@@ -1,23 +1,34 @@
 .about {
     background-color: #333;
-
-    display: flex;
-    flex-direction: row-reverse;
-
     padding: 120px 0;
+
+    background-image: url('../assets/img/image-about.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 40%;
 }
 
 .text-history {
-    max-width: 300px;
-    /* margin-right: -100px; */
+    padding: 0 45% 0 0;
+}
+
+.text-history > h2 {
+    color: #fff;
 }
 
 .text-history h2 {
     font-size: 3.125em;
+    font-family: var(--font-title);
+    font-weight: normal;
 }
 
-section .image-about img {
-    width: 100%;
+.mission, .history, .team {
+    margin: 22px 0 28px 0;
+    color: #757272;
+    font-family: var(--font-text);
+
+    font-size: 1.25em;
+
 }
 
 /* Section services  */
@@ -113,4 +124,19 @@ section .image-about img {
 
 .hair img {
     padding: 20px 0 20px 50px;
+}
+
+@media (max-width: 1280px) {
+    .about {
+        background-image: none;
+    }
+
+    .text-history > h2 {
+        text-align: center;
+    }
+
+    .text-history {
+        text-align: justify;
+        padding: 0 100px;
+    }
 }
