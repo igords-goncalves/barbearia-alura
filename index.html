@@ -127,8 +127,8 @@
                         <div>
                             <h2>Marque um horário.</h2>
                             <p>
-                                Oferecemos profissionais experientes e antenados às
-                                mudanças no mundo da moda.
+                                Oferecemos profissionais experientes e antenados
+                                às mudanças no mundo da moda.
                             </p>
                         </div>
 
@@ -155,14 +155,36 @@
                                 às mudanças no mundo da moda.
                             </p>
                         </div>
-                        <form action="" method="get">
+                        <form action="" method="get" novalidate>
                             <div class="name-email">
-                                <input type="text" placeholder="Seu nome"/>
-                                <input type="email" name="" id="" placeholder="Seu email"/>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Seu nome"
+                                />
+                                <div class="flexdirection">
+                                    <input
+                                        type="email"
+                                        name=""
+                                        id="email"
+                                        placeholder="Seu email"
+                                        required
+                                        minlength="8"
+                                    />
+                                    <span
+                                        class="error"
+                                        aria-live="polite"
+                                    ></span>
+                                </div>
                             </div>
                             <div>
                                 <div class="tel-textarea">
-                                    <input type="tel" name="" id="" placeholder="Seu telefone"/>
+                                    <input
+                                        type="tel"
+                                        name=""
+                                        id=""
+                                        placeholder="Seu telefone"
+                                    />
                                     <textarea
                                         name=""
                                         id=""
@@ -196,7 +218,11 @@
                                 </div>
                             </div>
                             <div class="button-form-wrapper">
-                                <button class="button button-form" type="submit">
+                                <button
+                                    class="button button-form"
+                                    type="submit"
+                                    disabled
+                                >
                                     Enviar
                                 </button>
                             </div>
@@ -214,5 +240,6 @@
             </div>
         </footer>
         <script src="./src/js/scrollReveal.js"></script>
+        <script src="./src/js/validateForm.js"></script>
     </body>
 </html>
