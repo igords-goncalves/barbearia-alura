@@ -22,3 +22,38 @@
 h1, h2 {
     font-weight: lighter;
 }
+
+
+/* Validation form */
+
+input:invalid {
+    border-color:  #900;
+    background-color: #ffd;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+/* Stylish message error */
+
+.flexdirection {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.error {
+    width: 100%;
+    padding: 0;
+
+    color: #900;
+}
+
+.error:active {
+    padding: 0.3em;
+}
+
+[disabled] {
+    background-color: #ccc;
+}
