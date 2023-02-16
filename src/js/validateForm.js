@@ -1,24 +1,38 @@
 const form = document.querySelector("form");
 const inputEmail = document.getElementById("email");
 const emailError = document.querySelector("#email + span.error");
-
 const buttonForm = document.querySelector(".button-form");
 
-inputEmail.addEventListener("input", () => {
-    if (inputEmail.validity.valid) {
-        emailError.textContent = "";
-        emailError.className = "error";
-        buttonForm.removeAttribute("disabled", "");
-    } else {
-        showError();
-        buttonForm.setAttribute("disabled", "");
-        
-    }
-});
+/**
+ * Check if input is validity returning true or false
+ * 
+ * @param {{}} input - Represent inputs captured
+ * @param {{}} error - Represent error element
+ * @param {{}} button - Represent button that submits
+ * @param {Function} callBack
+ * @returns {void} - It would return undefined with a console.log
+ * 
+ * Trying to work with a pure function
+ */
+function isInputValid(input, error, button, callBack) {
+    input.addEventListener("input", () => {
+        if (input.validity.valid) {
+            error.textContent = "";
+            error.className = "error";
+            button.removeAttribute("disabled", "");
+        } else {
+            callBack();
+            button.setAttribute("disabled", "");
+        }
+    });
+}
+isInputValid(inputEmail, emailError, buttonForm, showError);
+
+
+
 
 form.addEventListener("submit", (event) => {
     if (!emailError.validity.valid) {
-
         showError();
         event.preventDefault();
     }
