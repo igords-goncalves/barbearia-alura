@@ -163,11 +163,19 @@
                         </div>
                         <form action="" method="get" novalidate>
                             <div class="name-email">
-                                <input
-                                    type="text"
-                                    id="name"
-                                    placeholder="Seu nome"
-                                />
+                                <div class="flexdirection">
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        placeholder="Seu nome"
+                                        required
+                                        minlength="3"
+                                    />
+                                    <span
+                                        class="error"
+                                        aria-live="polite"
+                                    ></span>
+                                </div>
                                 <div class="flexdirection">
                                     <input
                                         type="email"
@@ -185,12 +193,20 @@
                             </div>
                             <div>
                                 <div class="tel-textarea">
-                                    <input
-                                        type="tel"
-                                        name=""
-                                        id=""
-                                        placeholder="Seu telefone"
-                                    />
+                                    <div class="flexdirection">
+                                        <input
+                                            type="tel"
+                                            name=""
+                                            id="tel"
+                                            placeholder="Seu telefone"
+                                            required
+                                            minlength="11"
+                                        />
+                                        <span
+                                            class="error"
+                                            aria-live="polite"
+                                        ></span>
+                                    </div>
                                     <textarea
                                         name=""
                                         id=""
@@ -200,12 +216,20 @@
                                     ></textarea>
                                 </div>
                                 <div class="date">
-                                    <select name="datetime">
-                                        <option value="Horário">Horário</option>
-                                        <option value="9hs">9hs</option>
-                                        <option value="12hs">12hs</option>
-                                        <option value="15hs">15hs</option>
-                                    </select>
+                                    <div class="flexdirection">
+                                        <select name="datetime" id="datetime" required>
+                                            <option value="Horário">
+                                                Horário
+                                            </option>
+                                            <option value="9hs">9hs</option>
+                                            <option value="12hs">12hs</option>
+                                            <option value="15hs">15hs</option>
+                                        </select>
+                                        <span
+                                            class="error"
+                                            aria-live="polite"
+                                        ></span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="radio">
@@ -246,6 +270,6 @@
             </div>
         </footer>
         <script src="./src/js/scrollReveal.js"></script>
-        <script src="./src/js/validityForm.js"></script>
+        <script type="module" src="./src/js/validityForm.js"></script>
     </body>
 </html>
