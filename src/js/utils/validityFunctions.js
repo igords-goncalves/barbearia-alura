@@ -24,7 +24,7 @@ export function isInputValid(input, error, button, callBack) {
 }
 
 /**
- * Show types of errors if input constraints input aren't valid
+ * Show types of errors if input constraints aren't valid
  * @param {HTMLElement | null} input
  * @param {Element | null} error
  * @param {string} message
