@@ -10,6 +10,12 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <title>Barbearia Alura</title>
+        <!--TODO: Introduce namespace css
+            TODO: Introduce BEM css
+            TODO: Organize Folders by pattern
+            TODO: Validity all form
+            TODO: Submit form datas 
+        -->
     </head>
     <body>
         <header>
@@ -127,8 +133,8 @@
                         <div>
                             <h2>Marque um horário.</h2>
                             <p>
-                                Oferecemos profissionais experientes e antenados às
-                                mudanças no mundo da moda.
+                                Oferecemos profissionais experientes e antenados
+                                às mudanças no mundo da moda.
                             </p>
                         </div>
 
@@ -155,14 +161,52 @@
                                 às mudanças no mundo da moda.
                             </p>
                         </div>
-                        <form action="" method="get">
+                        <form action="" method="get" novalidate>
                             <div class="name-email">
-                                <input type="text" placeholder="Seu nome"/>
-                                <input type="email" name="" id="" placeholder="Seu email"/>
+                                <div class="flexdirection">
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        placeholder="Seu nome"
+                                        required
+                                        minlength="3"
+                                    />
+                                    <span
+                                        class="error"
+                                        aria-live="polite"
+                                    ></span>
+                                </div>
+                                <div class="flexdirection">
+                                    <input
+                                        type="email"
+                                        name=""
+                                        id="email"
+                                        placeholder="Seu email"
+                                        required
+                                        minlength="8"
+                                    />
+                                    <span
+                                        class="error"
+                                        aria-live="polite"
+                                    ></span>
+                                </div>
                             </div>
                             <div>
                                 <div class="tel-textarea">
-                                    <input type="tel" name="" id="" placeholder="Seu telefone"/>
+                                    <div class="flexdirection">
+                                        <input
+                                            type="tel"
+                                            name=""
+                                            id="tel"
+                                            placeholder="Seu telefone"
+                                            required
+                                            minlength="11"
+                                        />
+                                        <span
+                                            class="error"
+                                            aria-live="polite"
+                                        ></span>
+                                    </div>
                                     <textarea
                                         name=""
                                         id=""
@@ -172,12 +216,20 @@
                                     ></textarea>
                                 </div>
                                 <div class="date">
-                                    <select name="datetime">
-                                        <option value="Horário">Horário</option>
-                                        <option value="9hs">9hs</option>
-                                        <option value="12hs">12hs</option>
-                                        <option value="15hs">15hs</option>
-                                    </select>
+                                    <div class="flexdirection">
+                                        <select name="datetime" id="datetime" required>
+                                            <option value="Horário">
+                                                Horário
+                                            </option>
+                                            <option value="9hs">9hs</option>
+                                            <option value="12hs">12hs</option>
+                                            <option value="15hs">15hs</option>
+                                        </select>
+                                        <span
+                                            class="error"
+                                            aria-live="polite"
+                                        ></span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="radio">
@@ -196,7 +248,11 @@
                                 </div>
                             </div>
                             <div class="button-form-wrapper">
-                                <button class="button button-form" type="submit">
+                                <button
+                                    class="button button-form"
+                                    type="submit"
+                                    disabled
+                                >
                                     Enviar
                                 </button>
                             </div>
@@ -214,5 +270,6 @@
             </div>
         </footer>
         <script src="./src/js/scrollReveal.js"></script>
+        <script type="module" src="./src/js/validityForm.js"></script>
     </body>
 </html>
