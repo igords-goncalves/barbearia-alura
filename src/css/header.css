@@ -1,63 +1,58 @@
-header {
+.c-header {
     background: url("../assets/img/banner-header.svg");
     background-size: cover;
     background-repeat: no-repeat;
-
     width: 100%;
-
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
-    color: #fff;
 }
 
-.nav-logo-header {
+.c-header__nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
+    width: 100%;
 }
 
-.title-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+nav {
+    width: 50%;
 }
 
-.logo {
-    margin: 10px 0 36px 0;
+.c-header__menu {
+    justify-content: space-between;
 }
 
-li a {
-    padding: 0 0 0 78px;
-    text-decoration: none;
+.c-header__link {
     font-family: var(--font-text);
     font-weight: normal;
     font-size: 1.5em;
-
     text-decoration: none;
-
     color: #fff;
 }
 
-ul {
+.c-header__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 0 0 75px 0;
+}
+
+.c-header__menu {
     display: flex;
     list-style: none;
 }
 
-.title-header {
-    padding: 0 0 75px 0;
-}
-
-.title-header h1 {
+.c-header__title h1 {
     padding: 0 0 34px 0;
 
     font-family: var(--font-title);
     font-size: 4em;
 }
 
-.description {
+.c-header__description {
     padding: 0 0 87px 0;
 
     font-family: var(--font-text);
@@ -70,60 +65,47 @@ ul {
     text-align: center;
 }
 
-.button {
-    padding: 25px 120px;
-    font-size: 1.1em;
-    font-family: var(--font-text);
-
-    color: #fff;
-    text-decoration: none;
-
-    border: none;
-    border-radius: 3px;
-    outline: none;
-
-    background-color: #c56e07;
-}
-
-
 @media (max-width: 1280px) {
-
-    .title-header h1 {
-        padding: 15px 0 34px 0;
-        font-size: 3em;
-    }
-
-    .nav-logo-header {
+    .c-header__nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    ul {
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .nav nav ul li a {
-        padding: 30px;
+    .c-header__title h1 {
+        padding: 15px 0 34px 0;
+        font-size: 3em;
     }
 }
 
 @media screen and (max-width: 768px) {
-
-    .container {
-        max-width: 284px;
+    nav {
+        display: none;
     }
 
-    .title-header h1 {
+    .c-header__nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .c-header__title h1 {
         text-align: center;
     }
 
-    .button-header .button{
+    .c-header__btn {
         padding: 10px;
     }
+    .c-header__menu {
+        flex-direction: column;
+    }
 
-    .description {
+    .c-header__link {
+        display: none;
+        /* Inserir hamburger */
+    }
+
+    .c-header__description {
         width: 100%;
         text-align: center;
     }

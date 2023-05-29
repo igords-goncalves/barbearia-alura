@@ -4,21 +4,36 @@
 
 @import url("./css/header.css");
 @import url("./css/body.css");
-@import url("./css/main.css");
 @import url("./css/footer.css");
+
+@import url("./css/components/fonts.css");
+@import url("./css/components/validations.css");
+@import url("./css/components/button.css");
+
+@import "./css/sections/about.css";
+@import "./css/sections/services.css";
+@import "./css/sections/contact.css";
 
 
 :root {
     --font-title: 'Lora Serif', serif;
     --font-text: 'Inter', serif;
+    --text-color: #757272;
 }
 
-* {
+*, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-h1, h2 {
-    font-weight: lighter;
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.u-container {
+    max-width: 80%;
+    margin: 0 auto;
 }

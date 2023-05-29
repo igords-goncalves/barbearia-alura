@@ -4,80 +4,81 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
         <link rel="stylesheet" href="./src/global.style.css" />
-
         <script src="https://unpkg.com/scrollreveal"></script>
-
         <title>Barbearia Alura</title>
+        <!--
+            TODO: Validity all form
+            TODO: Submit form datas in a simple backend
+        -->
     </head>
     <body>
-        <header>
-            <div class="container">
-                <div class="nav-logo-header">
-                    <div class="logo" id="top">
-                        <img
-                            src="./src/assets/img/logo.svg"
-                            alt="Logomarca barbearia alura"
-                            class="logo"
-                        />
-                    </div>
-                    <div class="nav">
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#">Início</a>
-                                </li>
-                                <li>
-                                    <a href="#about">Sobre</a>
-                                </li>
-                                <li>
-                                    <a href="#services">Serviços</a>
-                                </li>
-                                <li>
-                                    <a href="#contact">Contato</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+        <header class="c-header">
+            <div class="u-container">
+                <div class="c-header__nav">
+                    <img
+                        src="./src/assets/img/logo.svg"
+                        alt="Logomarca barbearia alura"
+                        class="c-header__img"
+                    />
+                    <nav>
+                        <ul class="c-header__menu">
+                            <li class="c-header__item">
+                                <a class="c-header__link" href="#">Início</a>
+                            </li>
+                            <li class="c-header__item">
+                                <a class="c-header__link" href="#about"
+                                    >Sobre</a
+                                >
+                            </li>
+                            <li class="c-header__item">
+                                <a class="c-header__link" href="#services"
+                                    >Serviços</a
+                                >
+                            </li>
+                            <li class="c-header__item">
+                                <a class="c-header__link" href="#contact"
+                                    >Contato</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="title-header">
+                <div class="c-header__title">
                     <h1>Barbearia para os Devs</h1>
-                    <div class="description">
+                    <div class="c-header__description">
                         <p>
                             Nossa missão é "proporcionar auto-estima e qualidade
                             de vida aos clientes"
                         </p>
                     </div>
-                    <div class="button-header">
-                        <a
-                            href="https://www.alura.com.br/"
-                            target="_blank"
-                            class="button"
-                            >Saiba Mais</a
-                        >
-                    </div>
+                    <a
+                        href="https://www.alura.com.br/"
+                        target="_blank"
+                        class="u-btn"
+                        >Saiba Mais</a
+                    >
                 </div>
             </div>
         </header>
 
         <main>
-            <section class="about" id="about">
-                <div class="container">
-                    <div class="text-history">
+            <section class="c-about" id="about">
+                <div class="u-container">
+                    <div class="c-about__history">
                         <h2>Sobre a Barbearia</h2>
-                        <p class="mission">
+                        <p class="c-about__mission">
                             Nossa missão é "proporcionar auto-estima e qualidade
                             de vida aos clientes"
                         </p>
-                        <p class="history">
+                        <p class="c-about__description">
                             Localizada no coração da cidade a Barbearia Alura
                             traz para o mercado o que há de melhor para o seu
                             cabelo e barba. Fundada em 2019, a Barbearia Alura
                             já é destaque na cidade e conquista novos clientes a
                             cada dia.
                         </p>
-                        <p class="team">
+                        <p class="c-about__team">
                             Oferecemos profissionais experientes e antenados às
                             mudanças no mundo da moda. O atendimento possui
                             padrão de excelência e agilidade, garantindo
@@ -86,32 +87,45 @@
                     </div>
                 </div>
             </section>
-            <section class="services" id="services">
-                <div class="container">
-                    <div class="title-services">
+
+            <section class="c-service" id="services">
+                <div class="u-container">
+                    <div class="c-service__title">
                         <h2>Serviços</h2>
                         <p>
                             Oferecemos profissionais experientes e antenados às
                             mudanças no mundo da moda
                         </p>
                     </div>
-                    <div class="cards">
-                        <div class="beard">
-                            <img src="./src/assets/img/beard.svg" alt="" />
+                    <div class="c-service__cards">
+                        <div class="c-service__card">
+                            <img
+                                class="c-service__img"
+                                src="./src/assets/img/beard.svg"
+                                alt=""
+                            />
                             <p>
                                 Refatorar barba e bigóde deixando aquela
                                 funcionalidade da cara de mal bem clean.
                             </p>
                         </div>
-                        <div class="beard-and-hair">
-                            <img src="./src/assets/img/beard-hair.svg" alt="" />
+                        <div class="c-service__card">
+                            <img
+                                class="c-service__img"
+                                src="./src/assets/img/beard-hair.svg"
+                                alt=""
+                            />
                             <p>
                                 Estilo no cabelo e barba usando a ultima
                                 tendência em classes para ser bem identificado.
                             </p>
                         </div>
-                        <div class="hair">
-                            <img src="./src/assets/img/hair.svg" alt="" />
+                        <div class="c-service__card">
+                            <img
+                                class="c-service__img"
+                                src="./src/assets/img/hair.svg"
+                                alt=""
+                            />
                             <p>
                                 Commitar só o cabelo sem alteração no codigo
                                 gnêtico origial, evitando imutabilidade.
@@ -121,14 +135,14 @@
                 </div>
             </section>
 
-            <section class="contact" id="contact">
-                <div class="container form-contact">
-                    <div class="title-contact">
+            <section class="c-contact" id="contact">
+                <div class="u-container c-contact__form">
+                    <div class="c-contact__title">
                         <div>
                             <h2>Marque um horário.</h2>
                             <p>
-                                Oferecemos profissionais experientes e antenados às
-                                mudanças no mundo da moda.
+                                Oferecemos profissionais experientes e antenados
+                                às mudanças no mundo da moda.
                             </p>
                         </div>
 
@@ -147,56 +161,89 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="form">
-                        <div class="title-form">
+
+                    <div class="c-form">
+                        <div class="c-form__title">
                             <h3>Contatos</h3>
                             <p>
                                 Oferecemos profissionais experientes e antenados
                                 às mudanças no mundo da moda.
                             </p>
                         </div>
-                        <form action="" method="get">
-                            <div class="name-email">
-                                <input type="text" placeholder="Seu nome"/>
-                                <input type="email" name="" id="" placeholder="Seu email"/>
+                        <form action="" method="post" novalidate>
+                            <div class="c-form__nome u-inputs">
+                                <label>Nome</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Digite seu nome aqui ..."
+                                    required
+                                    minlength="3"
+                                />
+                                <span class="error" aria-live="polite"></span>
                             </div>
-                            <div>
-                                <div class="tel-textarea">
-                                    <input type="tel" name="" id="" placeholder="Seu telefone"/>
-                                    <textarea
-                                        name=""
-                                        id=""
-                                        cols="10"
-                                        rows="1"
-                                        placeholder="Sua mensagem"
-                                    ></textarea>
-                                </div>
-                                <div class="date">
-                                    <select name="datetime">
-                                        <option value="Horário">Horário</option>
-                                        <option value="9hs">9hs</option>
-                                        <option value="12hs">12hs</option>
-                                        <option value="15hs">15hs</option>
-                                    </select>
-                                </div>
+                            <div class="c-form__email u-inputs">
+                                <label>E-mail</label>
+                                <input
+                                    type="email"
+                                    name=""
+                                    id="email"
+                                    placeholder="Seu email"
+                                    required
+                                    minlength="8"
+                                />
+                                <span class="error" aria-live="polite"></span>
                             </div>
-                            <div class="radio">
+
+                            <div class="c-form__tel u-inputs">
+                                <label>Telefone</label>
+                                <input
+                                    type="tel"
+                                    name=""
+                                    id="tel"
+                                    placeholder="Seu telefone"
+                                    required
+                                    minlength="11"
+                                />
+                                <span class="error" aria-live="polite"></span>
+                            </div>
+
+                            <div class="c-form__date u-inputs">
+                                <label>Horário</label>
+                                <select name="datetime" id="datetime" required>
+                                    <option value="Horário">Horário</option>
+                                    <option value="9hs">9hs</option>
+                                    <option value="12hs">12hs</option>
+                                    <option value="15hs">15hs</option>
+                                </select>
+                                <span
+                                    class="c-form__error"
+                                    aria-live="polite"
+                                ></span>
+                            </div>
+
+                            <div class="c-form__radio">
                                 <p>Como prefere contato?</p>
-                                <div class="radio-input">
-                                    <input type="radio" name="contac" id="" />
-                                    <label for="">telefone</label>
+                                <div class="c-form__radio-input">
+                                    <label for="">Telefone</label>
+                                    <input type="radio" name="contact" id="" />
                                 </div>
-                                <div class="radio-input">
-                                    <input type="radio" name="contac" id="" />
+                                <div class="c-form__radio-input">
                                     <label for="">Whatsapp</label>
+                                    <input type="radio" name="contact" id="" />
                                 </div>
-                                <div class="input-radio">
-                                    <input type="radio" name="contac" id="" />
+                                <div class="c-form__radio-input">
                                     <label for="">E-mail</label>
+                                    <input type="radio" name="contact" id="" />
                                 </div>
                             </div>
-                            <div class="button-form-wrapper">
-                                <button class="button button-form" type="submit">
+
+                            <div class="c-form__wrapper">
+                                <button
+                                    class="c-form__button u-btn"
+                                    type="submit"
+                                    disabled
+                                >
                                     Enviar
                                 </button>
                             </div>
@@ -206,7 +253,7 @@
             </section>
         </main>
         <footer>
-            <div class="container">
+            <div class="u-container">
                 <img src="./src/assets/img/logo.svg" alt="" />
                 <p>
                     Um projeto do programa Desenvolve 3 Edição - Grupo Boticário
@@ -214,5 +261,6 @@
             </div>
         </footer>
         <script src="./src/js/scrollReveal.js"></script>
+        <script type="module" src="./src/js/validityForm.js"></script>
     </body>
 </html>

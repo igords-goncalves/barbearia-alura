@@ -1,0 +1,89 @@
+.c-form {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fff;
+    max-width: 550px;
+    padding:66px;
+}
+
+.c-form__title h3 {
+    margin-bottom: 8px;
+}
+
+.c-form__title p {
+    margin-bottom: 30px;
+}
+
+input {
+    border: 1px solid #8a8a8a;
+    padding: 16px;
+    width: 100%;
+
+    font-family: var(--font-text);
+    color: #252525;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.u-inputs {
+    margin-bottom: 20px;
+}
+
+.c-form__radio {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-text);
+    color: #252525;
+    font-weight: normal;
+}
+
+.c-form__radio p {
+    margin-bottom: 20px;
+}
+
+.c-form__radio-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 50%;
+}
+
+.c-form__radio-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 50%;
+}
+
+
+.c-form__button {
+    height: 60px;
+
+}
+
+.c-form__wrapper {
+    margin-top: 48px;
+    text-align: center;
+}
+
+select[name="datetime"] {
+    border: 1px solid #8a8a8a;
+    padding: 16px;
+
+    font-family: var(--font-text);
+    font-size: 1.2em;
+    color: #8a8a8a;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .c-form__radio-input {
+        flex-direction: column;
+    }
+
+    .c-form__radio  {
+        align-items: center;
+    }
+}

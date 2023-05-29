@@ -1,0 +1,62 @@
+@import "../form/form.css";
+
+.c-contact__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.c-contact {
+    background-image: url("../../assets/img/background-contact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 100px 0;
+}
+
+.c-contact__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 500px;
+}
+
+.c-contact__title h2 {
+    margin: 0 0 16px 0;
+}
+
+.c-contact__title p {
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #757272;
+    padding: 16px;
+    text-align: center;
+    color: #757272;
+    font-family: var(--font-text);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+@media (max-width: 1280px) {
+    .c-contact__form {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .c-contact__title {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}
