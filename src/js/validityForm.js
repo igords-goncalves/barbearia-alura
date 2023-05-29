@@ -18,3 +18,9 @@ const telError = document.querySelector("#tel + span.error");
 
 isInputValid(inputEmail, emailError, buttonForm, showError);
 handleSubmit(form, emailError, showError);
+
+isInputValid(inputName, nameError, buttonForm, showError)
+handleSubmit(form, nameError, showError)
+
+isInputValid(inputTel, telError, buttonForm, showError)
+handleSubmit(form, telError, showError)

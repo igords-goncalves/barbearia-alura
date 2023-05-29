@@ -1,4 +1,8 @@
 
+import { errorMessages } from "./validityErrorMesages";
+
+console.log(errorMessages.emailErrorMessages.valueMissing)
+
 /**
  * Check if input is validity returning true or false
  *
@@ -32,7 +36,7 @@ export function isInputValid(input, error, button, callBack) {
  */
 export function showError(input, error) {
     if (input.validity.valueMissing) {
-        error.textContent = "Insira um e-mail"
+        error.textContent = errorMessages.emailErrorMessages.valueMissing
     }
 
     if (input.validity.tooShort) {
