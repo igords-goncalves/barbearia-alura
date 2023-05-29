@@ -1,0 +1,23 @@
+h1, h2 {
+    font-weight: lighter;
+}
+
+h2 {
+    color: #fff;
+    font-size: 3.125em;
+}
+
+h3 {
+    font-family: var(--font-title);
+    font-size: 3.125em;
+    color: #222;
+    font-weight: lighter;
+}
+
+p, label {
+    color: var(--text-color);
+    font-family: var(--font-text);
+    font-weight: 500;
+    font-size: 1.3em;
+    line-height: 1.5;
+}

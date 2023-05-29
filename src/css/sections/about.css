@@ -1,0 +1,40 @@
+.c-about {
+    background-color: #333;
+    padding: 100px 0;
+
+    background-image: url("../../assets/img/image-about.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+.c-about__history {
+    width: 60%;
+}
+
+.c-about__mission,
+.c-about__history,
+.c-about__team {
+    margin: 30px 0;
+}
+
+@media (max-width: 1280px) {
+    .c-about {
+        background-image: none;
+        padding: 30px 0 100px 0;
+    }
+
+    .c-about__history {
+        text-align: center;
+        width: 100%;
+    }
+
+    .c-about__container {
+        text-align: justify;
+        padding: 0 0;
+    }
+}
+
+@media (max-width: 727px) {
+
+}
